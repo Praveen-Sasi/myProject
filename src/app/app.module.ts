@@ -10,6 +10,7 @@ import { RegisterComponent } from './user/register/register.component';
 import { ChangePasswordComponent } from './user/change-password/change-password.component';
 import { ProfileComponent } from './user/profile/profile.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]

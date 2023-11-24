@@ -3,7 +3,7 @@
 </div>
 
 
-<input type="email" id="email" class="form-control mt-5" placeholder="Enter your mail id" name="email"/>
-<input type="password" id="password" class="form-control mt-5" placeholder="Enter your password" name="password" />
+<input type="email" id="email" class="form-control mt-5" placeholder="Enter your mail id" name="email" [(ngModel)]="email"/>
+<input type="password" id="password" class="form-control mt-5" placeholder="Enter your password" name="password" [(ngModel)]="password" />
 
-<button class="btn btn-success mt-4 ms-5">click</button>
+<button class="btn btn-success mt-4 ms-5" (click)="SaveData()">click</button>
